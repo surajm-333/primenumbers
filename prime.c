@@ -5,6 +5,11 @@ int main()
     int num,check;
     printf("Enter a number: ");
     scanf("%d", &num);
+    if(num==1)
+    {
+        printf("1 is neither prime nor composite number");
+        return 0;
+    }
     check = primeno(num, num / 2);
     if (check == 1)
     {
